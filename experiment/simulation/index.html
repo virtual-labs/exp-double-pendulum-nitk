@@ -1,13 +1,105 @@
+<!-- Home page of simulator -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
+    <title>Virtual Lab</title>
+    <style>
+        canvas {
+            border: 1px solid silver;
+            cursor: crosshair;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
 </head>
 <body>
-		<!-- Your code goes here-->
+    <!-- simulation -->
+    <div class="simulation" id="simulation">
+        <div class="topic">
+            <h2>Double pendulum</h2>
+        </div>
+        <!-- content2 -->
+        <div style="display: block;" id="content2">
+            <div class="blocker" onclick="closeobservation()" id="blocker"></div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+            <div class="simoptions" id="simoptions">
+                <div class="current" id = "length1">
+                    <p>Rod-1 length: <span id="len1value"></span> </p>
+                    <input type="range" min="10" max="200" value="100" step="0.01" class="slider" id="cslider1" >
+                </div>
+                <div class="current" id = "length2">
+                    <p>Rod-2 length: <span id="len2value"></span> </p>
+                    <input type="range" min="10" max="200" value="100" step="0.01" class="slider" id="cslider2" >
+                </div>
+                <div class="current" id = "mass1">
+                    <p>Mass1: <span id="mass1value"></span> </p>
+                    <input type="range" min="10" max="50" value="25" step="0.01" class="slider" id="cslider3" >
+                </div>
+                <div class="current" id = "mass2">
+                    <p>Mass2: <span id="mass2value"></span> </p>
+                    <input type="range" min="10" max="50" value="25" step="0.01" class="slider" id="cslider4" >
+                </div>
+                <div class="current" id = "gravity">
+                    <p>Gravity: <span id="gravityvalue"></span> </p>
+                    <input type="range" min="1" max="100" value="9.80" step="0.01" class="slider" id="cslider5" >
+                </div>
+                <div class="insert-reset-observation">
+                    <button id="graphbutton" type="button" onclick="Graph()">Graph</button>
+                </div>
+                <div class="insert-reset-observation">
+                    <button id="reset" type="reset" onclick="Refresh()">Reset</button>
+                </div>
+                <div class="help">
+                    <button type="button" onclick="help()"><img src="images/help.png" alt="helpicon"></button>
+                </div>
+            </div>
+
+            <!-- simulation -->
+            <div class="mainsimulation" id="mainsimulation">
+                <canvas id="canvas" width="599" height="548"></canvas>
+                <!-- <canvas id="canvas2" width="599" height="548"></canvas> -->
+                <div id="graph" ></div>
+            </div>
+            <div id="instructions">
+                <div class="icontent">
+                    <h4>Instructions</h4>
+                    <ol>
+                        <li>Select the "Magnetic Field vs Current" procedure from 'Select Procedure' dropdown menu.</li>
+                        <li>Click on the 'Insert Hall probe' button to insert the probe into the electromagnet.The distance between electromagnet should be 1 cm.</li>
+                        <li>Click on the 'Add to Table' button to add current and magnetic field values to the table.</li>
+                        <li>Click on the 'Observation' button to view the table.</li>
+                        <li>Click on the 'plot graph' button to view the graph.</li>
+                        <li>Change the procedure to "Zeeman Effect" to calculate the Bohr magneton.</li>
+                        <li>Click on the 'Insert mercury tube' button to insert the mercury discharge tube into the electromagnet.</li>
+                        <li>Place the optical rail near the electromagnet. Place the converging lens, polarizer, Fabry Perot etalon (fix the thickness of air gap of etalon t= 4mm),telescope with focussing lens, and CCD camera on the rail.</li>
+                        <li>Connect the CCD camera to the Monitor and observe the concentric circular rings.</li>
+                        <li>Apply the maximum magnetic field and observe the splitting of spectral lines.</li>
+                        <li>Set the centre of the specified line at the cross section as marked on the display.</li>
+                        <li>Bring the inner most splitting of the first spectrum line at the cross section and
+                            note down the micrometre reading. This position is Ri</li>
+                        <li>Now move the micrometre to adjust the second spectral splitting of the first line
+                            at the cross wire and note its reading</li>
+                        <li>Similarly take readings of splitting in different spectral lines.</li>
+                        <li>After getting the values of ,Calculate Bohr magneton using the relation.
+                            Where, h ⟹ Plank’s constant,
+                            B⟹ Magnetic field,
+                            c⟹ velocity of light,
+                            t⟹ thickness of air gap for etalon =4mm.
+                        </li>
+                    </ol>
+                </div>
+                    <button type="button" onclick="closeobservation()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
