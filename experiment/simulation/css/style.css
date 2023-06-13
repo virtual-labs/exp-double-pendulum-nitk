@@ -33,59 +33,6 @@
     margin-left: 20px;
   }
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-  }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    place-items: center;
-  }
-  
-  .img1 {
-    height: 85px;
-    width: 100px;
-    margin: 20px auto;
-  }
-  
-  .img2 {
-    height: 85px;
-    width: 110px;
-    margin: 20px auto;
-  }
-  
-  .img3 {
-    height: 80px;
-    width: 110px;
-    margin: 20px auto;
-  }
-  
-  .img4 {
-    height: 81px;
-    width: 190px;
-    margin: 20px auto;
-  
-  }
-  
-  .img5 {
-    height: 50px;
-    width: 100px;
-    margin: 20px auto;
-  
-  }
-  
-  .img6 {
-    height: 85px;
-    width: 90px;
-    margin: 20px auto;
-  }
-  
-  /* next button */
-  
   #buttonup {
     border: 0;
     cursor: pointer;
@@ -93,7 +40,7 @@
     margin-right: 20px;
     background-color: white;
   }
-  
+
   #buttondown {
     border: 0;
     cursor: pointer;
@@ -104,42 +51,20 @@
     display: none;
   }
   
-  #IBgraphbutton {
-    display: none;
-    border: 0;
-    cursor: pointer;
-    float: right;
-    margin-right: 20px;
-    width: 90px;
-    height: 30px;
-    border-radius: 20px;
-    border: 2px solid black;
-  }
-  
-  #IBgraph {
-    display: none;
-    height: 400px;
-    width: 700px;
+  #clearbutton {
     position: absolute;
-    background-color: white;
-    top: 110px;
-    left: 45px;
-    border: black solid;
-    border-width: 3px;
-    z-index: 7;
+    top: 500px;
+    left: 435px;
+    display: none;
   }
-  
-  #IBgraph button {
-    width: 60px;
-    height: 31px;
-    border-radius: 20px;
-    cursor: pointer;
-    float: right;
-    margin-right: 8px;
-    position: relative;
-    margin-top: -38px;
+
+  #clearbutton2 {
+    position: absolute;
+    top: 500px;
+    left: 435px;
+    display: none;
   }
-  
+
   .nextimg {
     width: 45px;
     height: 45px;
@@ -165,17 +90,6 @@
     filter: blur(0px);
   }
   
-  .procedure {
-    margin: 10px;
-  }
-  
-  #exp {
-    height: 35px;
-    width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(65, 62, 62, 0.219);
-    cursor: pointer;
-  }
-  
   .insert-reset-observation {
     display: flex;
     justify-content: center;
@@ -189,7 +103,7 @@
     cursor: pointer;
   }
   .current {
-    margin: 15px;
+    margin: 10px;
   }
   
   .slider {
@@ -224,19 +138,6 @@
     height: 20px;
   }
   
-  .thickness {
-    margin: 10px;
-  }
-  
-  .hallcurrent {
-    margin: 10px;
-  }
-  
-  .result {
-    margin: 10px;
-    text-align: left;
-  }
-  
   /* Simulation Box */
   
   .mainsimulation {
@@ -249,186 +150,14 @@
     text-align: center;
   }
   
-  #add {
-    display: none;
-    position: absolute;
-    left: 400px;
-    top: 5px;
-  }
-  
-  #fieldvalue {
-    width: 64px;
-    height: 21px;
-    position: absolute;
-    margin-top: 340px;
-    margin-left: 420px;
-    border: none;
-    font-size: 14px;
-    text-align: center;
-  }
-  #cvalue {
-    width: 100px;
-    height: 21px;
-    position: absolute;
-    margin-top: 316px;
-    margin-left: 25px;
-    border: none;
-    font-size: 19px;
-    text-align: center;
-  }
-  #voltagevalue {
-    width: 90px;
-    height: 21px;
-    position: absolute;
-    margin-top: 441px;
-    margin-left: 505px;
-    border: none;
-    font-size: 12px;
-    text-align: center;
-  }
-  .reading {
-    display:none; 
-    position: absolute;
-    font-size: 16px;
-    left: 380px; 
-    top: 65px;
-  }
-  .observation {
-    display: none;
-    height: 375px;
-    width: 700px;
-    position: absolute;
-    background-color: rgb(174, 215, 232);
-    top: 110px;
-    left: 45px;
-    border: black solid;
-    border-width: 3px;
-    z-index: 7;
-  }
-  
-  .tablediv {
-    height: 334px;
-    justify-content: center;
-    display: flex;
-    overflow-y: hidden;
-  }
-  
-  .observationTable {
-    border-collapse: collapse;
-    width: 95%;
-    margin-top: 11px;
-    margin-left: 14px;
-    margin-bottom: 5px;
-    height: min-content;
-    background-color: white;
-  }
-  
-  .observation td,
-  th {
-    border: 2px solid #000000;
-    text-align: center;
-    padding: 8px;
-  }
-  
-  .tableObservation {
-    display: flex;
-    height: 40px;
-    width: 100%-10px;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  
-  .tableObservation button {
-    width: 60px;
-    height: 31px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .observations {
-    display: none;
-    height: 520px;
-    width: 700px;
-    position: absolute;
-    background-color: rgb(174, 215, 232);
-    top: 60px;
-    left: 45px;
-    border: black solid;
-    border-width: 3px;
-    z-index: 7;
-  }
-  .observations td,
-  th {
-    border: 2px solid #000000;
-    text-align: center;
-    padding: 6px;
-  }
-  .tablesdiv {
-    height: 481px;
-    justify-content: center;
-    display: flex;
-    overflow-y: auto;
-  }
-  .tableObservations {
-    display: flex;
-    height: 40px;
-    width: 100%-10px;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  
-  .tableObservations button {
-    width: 60px;
-    height: 31px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .observation2 {
-    display: none;
-    height: 375px;
-    width: 700px;
-    position: absolute;
-    background-color: rgb(174, 215, 232);
-    top: 60px;
-    left: 45px;
-    border: black solid;
-    border-width: 3px;
-    z-index: 7;
-  }
-  .observation2 tbody,
-  th {
-    border: 2px solid #000000;
-    text-align: center;
-    padding: 15px;
-  }
-  .observation2
-  td {
-    border-left: 2px solid #000000;
-    text-align: center;
-    padding: 10px;
-  }
-  .observationTable2 {
-    border-collapse: collapse;
-    width: 90%;
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-bottom: 5px;
-    height: min-content;
-    background-color: white;
-  }
-  #content3 {
-    width: 800px;
-    height: 500px;
-  }
-  
   #graph {
     width: 800px;
     height: 500px;
   }
-  
+  .selectgraph {
+    margin: 10px;
+    display: none;
+  }
   .blocker {
     display: none;
     position: absolute;
@@ -485,131 +214,3 @@
     margin-bottom: 5px;
   }
   
-  /* hover image names */
-  #paper {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    height: 188px;
-    width: 180px;
-    top: 7px;
-    left: 255px;
-  }
-  #paper2 {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    height: 11px;
-    width: 250px;
-    top: 0px;
-    left: 5px;
-  }
-  .electromagnet {
-    height: 9em;
-    width: 14em;
-    position: absolute;
-    top: 112px;
-    left: 405px;
-    z-index: 5;
-  }
-  .constpwrsuply {
-    height: 9em;
-    width: 14em;
-    position: absolute;
-    z-index: 5;
-    top: 346px;
-    left: 203px;
-  } 
-  .digitalgaussmeter {
-    height: 7em;
-    width: 11em;
-    position: absolute;
-    z-index: 5;
-    top: 364px;
-    left: 620px;
-  }
-  .mtube {
-    height: 6em;
-    width: 1em;
-    position: absolute;
-    z-index: 5;
-    top: 490px;
-    left: 640px;
-  }
-  .screen {
-    height: 11em;
-    width: 15em;
-    position: absolute;
-    z-index: 5;
-    top: 70px;
-    left: 212px;
-  }
-  .flense {
-    height: 8em;
-    width: 2em;
-    position: absolute;
-    z-index: 5;
-    top: 290px;
-    left: 502px;
-  }
-  .fpetalon {
-    height: 8em;
-    width: 4em;
-    position: absolute;
-    z-index: 5;
-    top: 290px;
-    left: 402px;
-  }
-  .tscope {
-    height: 8em;
-    width: 4em;
-    position: absolute;
-    z-index: 5;
-    top: 290px;
-    left: 310px;
-  }
-  .ccdcmra {
-    height: 9em;
-    width: 3em;
-    position: absolute;
-    z-index: 5;
-    top: 280px;
-    left: 256px;
-  }
-  .zstand {
-    height: 4em;
-    width: 24em;
-    position: absolute;
-    z-index: 5;
-    top: 400px;
-    left: 210px;
-  }
-  .elemgnet {
-    height: 7em;
-    width: 6em;
-    position: absolute;
-    z-index: 5;
-    top: 272px;
-    left: 580px;
-  }
-  .zpwrsply {
-    height: 3em;
-    width: 7em;
-    position: absolute;
-    z-index: 5;
-    top: 530px;
-    left: 690px;
-  }
-  .powersupply {
-    height: 5em;
-    width: 6em;
-    position: absolute;
-    z-index: 5;
-    top: 452px;
-    left: 704px;
-  }
-
- .plot-container{
-    width:500px;
-    height: 500px;
-  }
