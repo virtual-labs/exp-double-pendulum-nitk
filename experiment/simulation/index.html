@@ -23,10 +23,17 @@
     <!-- simulation -->
     <div class="simulation" id="simulation">
         <div class="topic">
-            <h2>Double pendulum</h2>
+            <h2>Double Pendulum Experiment</h2>
         </div>
+        <div id="content">
+            <div class="subtopics">
+                <h4>Objective:</h4>
+                <p>To study the oscillatory motion of a double pendulum.</p>
+            </div>
+        </div>
+
         <!-- content2 -->
-        <div style="display: block;" id="content2">
+        <div style="display: none;" id="content2">
             <div class="blocker" onclick="closeobservation()" id="blocker"></div>
 
             <div class="simoptions" id="simoptions">
@@ -51,7 +58,45 @@
                     <input type="range" min="1" max="100" value="9.80" step="0.01" class="slider" id="cslider5" >
                 </div>
                 <div class="insert-reset-observation">
+                    <button id="simbutton" type="button" onclick="sim()" disabled>Sim</button>
+                </div>
+                <div class="insert-reset-observation">
                     <button id="graphbutton" type="button" onclick="Graph()">Graph</button>
+                </div>
+                <div class="insert-reset-observation">
+                    <button id="timegraph" type="button" onclick="Timegraph()">Time Graph</button>
+                </div>
+                <div class="selectgraph" id="g1">
+                    <label for="s1">Lime: 
+                        <select id="s1" class="form-control">
+                            <option value="angle-1" selected>angle-1</option>
+                            <option value="angle-1 velocity">angle-1 velocity</option>
+                            <option value="angle-2">angle-2</option>
+                            <option value="angle-2 velocity">angle-2 velocity</option>
+                            <option value="acceleration-1">acceleration-1</option>
+                            <option value="acceleration-2">acceleration-2</option>
+                            <option value="kinetic energy">kinetic energy</option>
+                            <option value="potential energy">potential energy</option>
+                            <option value="total energy">total energy</option>
+                            <option value="time">time</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="selectgraph" id="g2">
+                    <label for="s2">Red : 
+                        <select id="s2" class="form-control">
+                            <option value="angle-1">angle-1</option>
+                            <option value="angle-1 velocity" selected>angle-1 velocity</option>
+                            <option value="angle-2">angle-2</option>
+                            <option value="angle-2 velocity">angle-2 velocity</option>
+                            <option value="acceleration-1">acceleration-1</option>
+                            <option value="acceleration-2">acceleration-2</option>
+                            <option value="kinetic energy">kinetic energy</option>
+                            <option value="potential energy">potential energy</option>
+                            <option value="total energy">total energy</option>
+                            <option value="time">time</option>
+                        </select>
+                    </label>
                 </div>
                 <div class="insert-reset-observation">
                     <button id="reset" type="reset" onclick="Refresh()">Reset</button>
@@ -64,8 +109,12 @@
             <!-- simulation -->
             <div class="mainsimulation" id="mainsimulation">
                 <canvas id="canvas" width="599" height="548"></canvas>
-                <!-- <canvas id="canvas2" width="599" height="548"></canvas> -->
-                <div id="graph" ></div>
+                <div id="graph" >
+                    <button id="clearbutton" type="button" onclick="clearGraph()">Clear graph</button>
+                </div>
+                <div id="Timegraph" >
+                    <button id="clearbutton2" type="button" onclick="clearGraph2()">Clear graph</button>
+                </div>
             </div>
             <div id="instructions">
                 <div class="icontent">
@@ -95,9 +144,12 @@
                         </li>
                     </ol>
                 </div>
-                    <button type="button" onclick="closeobservation()">Close</button>
+                    <button type="button" onclick="closeobservation2()">Close</button>
             </div>
         </div>
+        <!-- next button -->
+        <button id="buttonup" onclick="up()"><img class="nextimg" src="images/arrow.png" alt="arrow"></button>
+        <button id="buttondown" onclick="down()"><img class="nextimg" src="images/arrow.png" alt="arrow"></button>
     </div>
     <script src="js/script.js"></script>
 </body>
