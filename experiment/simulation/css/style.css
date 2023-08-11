@@ -25,10 +25,6 @@
     line-height: 35px;
   }
   
-  .subtopics ol li {
-    margin-left: 40px;
-  }
-  
   .subtopics p {
     margin-left: 20px;
   }
@@ -41,16 +37,6 @@
     background-color: white;
   }
 
-  #buttondown {
-    border: 0;
-    cursor: pointer;
-    float: left;
-    margin-left: 20px;
-    background-color: white;
-    transform: scaleX(-1);
-    display: none;
-  }
-  
   #clearbutton {
     position: absolute;
     top: 500px;
@@ -158,59 +144,3 @@
     margin: 10px;
     display: none;
   }
-  .blocker {
-    display: none;
-    position: absolute;
-    height: 550px;
-    width: 800px;
-    z-index: 6;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .help {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 5px;
-  }
-  
-  .help button {
-    background-color: rgb(189, 231, 249);
-    border: 0;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .help img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  #instructions {
-    display: none;
-    height: 475px;
-    width: 700px;
-    position: absolute;
-    background-color: white;
-    top: 80px;
-    left: 45px;
-    border: 3px black solid;
-    overflow-y: auto;
-    z-index: 7;
-  }
-  
-  .icontent {
-    margin-left: 35px;
-    line-height: 1.63rem;
-  }
-  
-  #instructions button {
-    width: 60px;
-    height: 31px;
-    border-radius: 20px;
-    cursor: pointer;
-    position: static;
-    margin-left: 600px;
-    margin-bottom: 5px;
-  }
-  
