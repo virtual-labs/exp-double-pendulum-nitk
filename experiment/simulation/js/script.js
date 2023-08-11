@@ -164,7 +164,8 @@ function update() {
 
         potentialEnergy = -mass1*gravity*length1*Math.cos(angle1) - mass2*gravity*(length1*Math.cos(angle1) + length2*Math.cos(angle2));
         kineticEnergy = (0.5 * mass1 * (length1^2) * (angularVelocity1^2)) + (0.5 * mass2 * ((length1^2) * (angularVelocity1^2) + (length2^2) * (angularVelocity2^2) + 2 * length1 * length2 * angularVelocity1 * angularVelocity2 * Math.cos(angle1 - angle2)));
-        totalEnergy = potentialEnergy + kineticEnergy;
+
+        totalEnergy = -mass1 * gravity * length1 * Math.cos(angle1) - mass2 * gravity * (length1 * Math.cos(angle1) + length2 * Math.cos(angle2)) + (0.5 * mass1 * length1 * length1 * angularVelocity1 * angularVelocity1 + 0.5 * mass2 * (length1 * length1 * angularVelocity1 * angularVelocity1 + length2 * length2 * angularVelocity2 * angularVelocity2 + 2 * length1 * length2 * angularVelocity1 * angularVelocity2 * Math.cos(angle1 - angle2)));
     }   
 }
 function draw() {
@@ -393,13 +394,13 @@ function Timegraph() {
           y1Data.push(angularAcceleration2);
           break;
         case "potential energy":
-          y1Data.push(potentialEnergy);
+          y1Data.push(potentialEnergy/10000 + 11);
           break;
         case "kinetic energy":
-          y1Data.push(kineticEnergy);
+          y1Data.push(kineticEnergy/1000-5);
           break;
         case "total energy":
-          y1Data.push(totalEnergy);
+          y1Data.push(totalEnergy/10000+15);
           break;
         case "time":
           y1Data.push(t);
@@ -428,13 +429,13 @@ function Timegraph() {
           y2Data.push(angularAcceleration2);
           break;
         case "potential energy":
-          y2Data.push(potentialEnergy);
+          y2Data.push(potentialEnergy/10000+11);
           break;
         case "kinetic energy":
-          y2Data.push(kineticEnergy);
+          y2Data.push(kineticEnergy/1000-5);
           break;
         case "total energy":
-          y2Data.push(totalEnergy);
+          y2Data.push(totalEnergy/10000+15);
           break;
         case "time":
           y2Data.push(t);
@@ -536,13 +537,3 @@ function next() {
 function Refresh() {
     window.location = window.location.href;
 };
-
-function closeobservation2() {
-    document.getElementById('instructions').style.display = 'none';
-    document.getElementById('blocker').style.display = 'none';
-}
-
-function help() {
-    document.getElementById('instructions').style.display = 'block';
-    document.getElementById('blocker').style.display = 'block';
-}
