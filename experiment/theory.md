@@ -15,41 +15,53 @@ The equation of motion of a double pendulum can be obtained using the Lagrangian
 <center>
 <img src="images/fig1.png">  
 
-Fig. 1.
+Fig. 1. 
+
+[Double pendulum](https://scienceworld.wolfram.com/physics/dimg270.gif)
 </center>
 
 Consider a double bob pendulum with masses m<sub>1</sub> and m<sub>2</sub> attached by rigid massless wires of lengths l<sub>1</sub> and l<sub>2</sub>. Further, let the angles the two wires make with the vertical be denoted as 𝜭<sub>1</sub> and 𝜭<sub>2</sub>, as illustrated above. Finally, let gravity be given by g. Then the positions of the bobs are given by 
 
-<img src="images/img1.png">                     (1)
+<center>
+<img src="images/img1.png"> - - - - - - - - - -(1)
 
-<img src="images/img2.png">                     (2)
+<img src="images/img2.png"> - - - - - - - - - -(2)
 
-<img src="images/img3.png">                     (3)
+<img src="images/img3.png"> - - - - - - - - - -(3)
 
-<img src="images/img4.png">                     (4)
+<img src="images/img4.png"> - - - - - - - - - -(4)
+</center>
 
 Then the potential energy of the system is,
 
-<img src="images/img5.png">                     (5)
+<center>
+<img src="images/img5.png"> - - - - - - - - - -(5)
 
-<img src="images/img6.png">                     (6)
+<img src="images/img6.png"> - - - - - - - - - -(6)
+</center>
 
-And the kinetic energy is,  
+And the kinetic energy is, 
 
-<img src="images/img7.png">                     (7)
+<center>
+<img src="images/img7.png"> - - - - - - - - - -(7)
 
-<img src="images/img8.png">                     (8)  
+<img src="images/img8.png"> - - - - - - - - - -(8)  
+</center>
 
-The Lagrangian is then,
+The Lagrangian is then,  
 
-<img src="images/img9.png">                     (9)
+<center>
+<img src="images/img9.png"> - - - - - - - - - -(9)
 
-<img src="images/img10.png">                     (10)  
+<img src="images/img10.png"> - - - - - - - - - -(10)  
+</center>
 
  So, the equation of motion for 𝜭<sub>1</sub> and  𝜭<sub>2</sub> are,  
 
-<img src="images/img11.png">                     (11)
+<center>
+<img src="images/img11.png"> - - - - - - - - - -(11)
 
-<img src="images/img12.png">                     (12)  
+<img src="images/img12.png"> - - - - - - - - - -(12)  
+</center>
 
 The above equations (11) and (12) are close to the form needed to obtain a numerical solution using Runge Kutta method.
