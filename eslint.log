@@ -1,0 +1,21 @@
+
+/home/runner/work/exp-double-pendulum-nitk/exp-double-pendulum-nitk/experiment/simulation/js/script.js
+   46:10  warning  'slider_reset' is defined but never used  no-unused-vars
+  217:10  warning  'Graph' is defined but never used         no-unused-vars
+  264:5   warning  'Plotly' is not defined                   no-undef
+  275:13  warning  'Plotly' is not defined                   no-undef
+  291:10  warning  'clearGraph' is defined but never used    no-unused-vars
+  295:5   warning  'Plotly' is not defined                   no-undef
+  309:10  warning  'Timegraph' is defined but never used     no-unused-vars
+  367:5   warning  'Plotly' is not defined                   no-undef
+  475:9   warning  'Plotly' is not defined                   no-undef
+  490:10  warning  'clearGraph2' is defined but never used   no-unused-vars
+  495:5   warning  'Plotly' is not defined                   no-undef
+  500:10  warning  'sim' is defined but never used           no-unused-vars
+  523:10  warning  'up' is defined but never used            no-unused-vars
+  540:10  warning  'Refresh' is defined but never used       no-unused-vars
+  542:2   warning  Unnecessary semicolon                     no-extra-semi
+
+✖ 15 problems (0 errors, 15 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

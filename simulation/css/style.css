@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .simulation {
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+  }
+  
+  .simulation .topic {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .subtopics {
+    width: 100%-20px;
+    margin-left: 20px;
+    line-height: 35px;
+  }
+  
+  .subtopics p {
+    margin-left: 20px;
+  }
+  
+  #buttonup {
+    border: 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    background-color: white;
+  }
+
+  #clearbutton {
+    position: absolute;
+    top: 500px;
+    left: 435px;
+    display: none;
+  }
+
+  #clearbutton2 {
+    position: absolute;
+    top: 500px;
+    left: 435px;
+    display: none;
+  }
+
+  .nextimg {
+    width: 45px;
+    height: 45px;
+  }
+  .pendulumimg {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+  }
+  #content {
+    width: 800px;
+    height: 500px;
+  }
+  
+  #content2 {
+    width: 800px;
+    height: 500px;
+  }
+  
+  /* options */
+  
+  .simoptions {
+    background-color: rgba(135, 207, 235, 0.621);
+    width: 25%;
+    height: 550px;
+    float: left;
+    filter: blur(0px);
+  }
+  
+  .insert-reset-observation {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .insert-reset-observation button {
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .current {
+    margin: 10px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Simulation Box */
+  
+  .mainsimulation {
+    position: absolute;
+    left: 200px;
+    top: 51px;
+    width: 75%;
+    height: 551px;
+    /* float: right; */
+    text-align: center;
+  }
+  
+  #graph {
+    width: 800px;
+    height: 500px;
+  }
+  .selectgraph {
+    margin: 10px;
+    display: none;
+  }
