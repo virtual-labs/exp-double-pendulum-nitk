@@ -220,6 +220,7 @@ function Graph() {
     document.getElementById("Timegraph").style.display = "none";
     document.getElementById("clearbutton").style.display = "block";
     document.getElementById("clearbutton2").style.display = "none";
+    document.getElementById("timegraph").style.display = "block";
 
     document.getElementById("simbutton").disabled = false;
     document.getElementById("graphbutton").disabled = true;
@@ -311,6 +312,7 @@ function Timegraph() {
     document.getElementById("Timegraph").style.display = "block";
     document.getElementById("clearbutton").style.display = "none";
     document.getElementById("clearbutton2").style.display = "block";
+    document.getElementById("timegraph").style.display = "block";
 
     document.getElementById("simbutton").disabled = false;
     document.getElementById("graphbutton").disabled = false;
@@ -499,10 +501,11 @@ function sim() {
     document.getElementById("canvas").style.display = "block";
     document.getElementById("graph").style.display = "none";
     document.getElementById("Timegraph").style.display = "none";
+    document.getElementById("timegraph").style.display = "none";
 
     document.getElementById("simbutton").disabled = true;
     document.getElementById("graphbutton").disabled = false;
-    document.getElementById("timegraph").disabled = false;
+    document.getElementById("timegraph").disabled = true;
 
     document.getElementById("length1").style.display = "block";
     document.getElementById("length2").style.display = "block";

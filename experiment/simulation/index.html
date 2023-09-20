@@ -28,12 +28,16 @@
             <div class="subtopics">
                 <h4>Objective:</h4>
                 <p>To study the oscillatory motion of a double pendulum.</p>
+                <img class="pendulumimg" src="images/pendulum.png" alt="double pendulum image"> 
             </div>
         </div>
 
         <!-- content2 -->
         <div style="display: none;" id="content2">
             <div class="simoptions" id="simoptions">
+                <div class="insert-reset-observation">
+                    <button id="simbutton" type="button" onclick="sim()" disabled>Sim</button>
+                </div>
                 <div class="current" id = "length1">
                     <p>Rod-1 length: <span id="len1value"></span> </p>
                     <input type="range" min="10" max="200" value="100" step="0.01" class="slider" id="cslider1" >
@@ -55,13 +59,10 @@
                     <input type="range" min="1" max="100" value="9.80" step="0.01" class="slider" id="cslider5" >
                 </div>
                 <div class="insert-reset-observation">
-                    <button id="simbutton" type="button" onclick="sim()" disabled>Sim</button>
-                </div>
-                <div class="insert-reset-observation">
                     <button id="graphbutton" type="button" onclick="Graph()">Graph</button>
                 </div>
                 <div class="insert-reset-observation">
-                    <button id="timegraph" type="button" onclick="Timegraph()">Time Graph</button>
+                    <button style="display: none;" id="timegraph" type="button" onclick="Timegraph()" disabled>Time Graph</button>
                 </div>
                 <div class="selectgraph" id="g1">
                     <label for="s1">Lime: 

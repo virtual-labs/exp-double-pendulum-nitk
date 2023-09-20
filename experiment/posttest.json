@@ -38,10 +38,10 @@
     {
       "question": "Which one of the following is the Euler-Lagrange equation of motion?",
       "answers": {
-        "a": "images/pimg1.png",
-        "b": "images/pimg2.png",
-        "c": "images/pimg3.png",
-        "d": "images/pimg4.png"
+        "a": "<img src= 'images/pimg1.png' />",
+        "b": "<img src= 'images/pimg2.png' />",
+        "c": "<img src= 'images/pimg3.png' />",
+        "d": "<img src= 'images/pimg4.png' />"
       },
       "explanations": {
         "a": "",
