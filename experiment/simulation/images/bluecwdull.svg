@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg7119"
+   width="46.666668"
+   height="45.333332"
+   viewBox="0 0 46.666668 45.333332"
+   sodipodi:docname="bluecwdull.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7123" />
+  <sodipodi:namedview
+     id="namedview7121"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.2348418"
+     inkscape:cx="35.538518"
+     inkscape:cy="33.531359"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7125" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g7125">
+    <path
+       style="opacity:0.99;fill:none;stroke:#089b93;stroke-width:2.545;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+       id="path7298"
+       sodipodi:type="arc"
+       sodipodi:cx="23.495565"
+       sodipodi:cy="22.905224"
+       sodipodi:rx="15.466929"
+       sodipodi:ry="15.939202"
+       sodipodi:start="2.2393387"
+       sodipodi:end="0.56195565"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 13.9085,35.41313 A 15.466929,15.939202 0 0 1 11.025377,13.475958 15.466929,15.939202 0 0 1 32.196712,9.7274353 15.466929,15.939202 0 0 1 36.583908,31.398302" />
+    <path
+       style="opacity:0.99;fill:#089b93;fill-opacity:1;stroke:#089b93;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+       d="m 31.52898,33.077994 -1.446938,4.192321 12.768792,-3.609608 -8.834318,-9.518518 z"
+       id="path7300"
+       inkscape:transform-center-x="2.7553559"
+       inkscape:transform-center-y="-1.7057547" />
+  </g>
+</svg>
