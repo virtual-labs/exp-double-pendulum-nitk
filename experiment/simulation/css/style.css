@@ -38,18 +38,18 @@ h1 {
   /* vertical-align: middle; */
 }
 #grad1 {
-  position:absolute;
-   background-image: linear-gradient(yellow, yellow);
-   /* width: 300px; */
+  position: absolute;
+  background-image: linear-gradient(yellow, yellow);
+  /* width: 300px; */
   /* transform: rotate(90deg);  */
 }
 
-.cont1{
-  width: 100%; 
+.cont1 {
+  width: 100%;
   height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* bolts */
 .round {
@@ -66,7 +66,7 @@ h1 {
   );
   box-shadow: 0 0 0 0.3rem rgba(255, 255, 255, 0.55);
 }
-.box{
+.box {
   cursor: pointer;
 }
 .left-top {
@@ -217,7 +217,6 @@ h1 {
   border: 0.5rem solid var(--clr-text-clr);
   overflow-y: hidden;
   overflow-x: hidden;
-  
 }
 
 .main__task-div:nth-child(1) {
@@ -260,7 +259,6 @@ h1 {
   margin-bottom: 0;
 }
 
-
 .div__control {
   /* position: absolute;
   top: 1.6rem;
@@ -292,12 +290,11 @@ h1 {
   border: 1px solid var(--clr-title-background);
   background-color: #fff;
   display: grid;
- 
+
   grid-template-columns: 1fr;
   overflow-x: hidden;
   object-fit: contain;
 }
-
 
 .help,
 .practice {
@@ -307,18 +304,20 @@ h1 {
   /* padding: 5rem; */
   position: relative;
 }
-.apparatus{
+.apparatus {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 5rem;
   position: relative;
 }
-.objective{
+.objective {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
-  padding: 13rem;
+  padding: 15rem;
   position: relative;
   overflow: hidden;
 }
@@ -347,8 +346,6 @@ h1 {
   border-radius: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
   width: 100%;
- 
-  
 }
 
 .objective__list {
@@ -371,7 +368,7 @@ h1 {
   width: 100%;
   visibility: hidden;
 }
-.components{
+.components {
   text-align: left;
   align-items: flex-start;
 }
@@ -394,8 +391,6 @@ h1 {
   width: 303px;
   display: block;
 }
-
-
 
 #Vgraph {
   display: none;
@@ -439,7 +434,7 @@ h1 {
   border: 2px solid black;
 }
 
-#calculate{
+#calculate {
   display: none;
   height: 380px;
   width: 581px;
@@ -469,7 +464,7 @@ h1 {
   border-radius: 20px;
   cursor: pointer;
   float: right;
-      margin-right: 8px;
+  margin-right: 8px;
   position: relative;
   margin-top: -60px;
 }
@@ -498,17 +493,15 @@ h1 {
   text-align: center;
   background-color: #fff;
   transform: rotate(351deg);
-  
 }
 
-
-.model{
+.model {
   width: 120%;
   max-width: 400px;
   height: auto;
 }
 
-#mainsimulation{
+#mainsimulation {
   height: 430px;
   width: auto;
   overflow-y: hidden;
@@ -547,13 +540,12 @@ h1 {
   height: 133px;
   top: 119px;
 }
-#circuit4{
+#circuit4 {
   position: absolute;
   left: 203px;
   width: 45px;
   height: 139px;
   top: 109px;
-  
 }
 #circuit5 {
   position: absolute;
@@ -563,38 +555,35 @@ h1 {
   top: 113px;
 }
 
-
-#circuit6{
+#circuit6 {
   position: absolute;
-    left: 265px;
-    width: 43px;
-    height: 145px;
-    top: 107px;
+  left: 265px;
+  width: 43px;
+  height: 145px;
+  top: 107px;
 }
-#circuit10{
+#circuit10 {
   position: absolute;
   left: 132px;
   width: 156px;
-    height: 68px;
-    top: 52px;
+  height: 68px;
+  top: 52px;
 }
-#circuit12{
+#circuit12 {
   position: absolute;
   left: 383px;
   width: 119px;
   height: 206px;
   top: 119px;
-  
 }
-#circuit8{
+#circuit8 {
   position: absolute;
   left: 385px;
   width: 51px;
   height: 136px;
   top: 119px;
-  
 }
-#circuit7{
+#circuit7 {
   position: absolute;
   left: 352px;
   width: 85px;
@@ -602,13 +591,12 @@ h1 {
   top: 292px;
   transform: rotate(352deg);
 }
-#circuit9{
+#circuit9 {
   position: absolute;
   left: 465px;
   width: 109px;
   height: 92px;
   top: 236px;
-  
 }
 
 #circuit11 {
@@ -620,24 +608,30 @@ h1 {
   transform: rotate(353deg);
 }
 
-#sim1{
+#sim1 {
   display: none;
-  left:281px;top: 129px; width: 458px;height: 302px;
+  left: 281px;
+  top: 129px;
+  width: 458px;
+  height: 302px;
 }
 
-.note1Input{
+.note1Input {
   cursor: pointer;
- border-radius: 5px;
+  border-radius: 5px;
   margin: 0auto;
-margin-left: 125px;
-margin-top: 0px;
+  margin-left: 125px;
+  margin-top: 0px;
 }
 
-#divii{
-  color: white; font-size: 15px; padding: 5px; margin-top: 0px
+#divii {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
-#note2{
+#note2 {
   position: absolute;
   padding: 10px;
   border: 1px solid black;
@@ -646,14 +640,17 @@ margin-top: 0px;
   left: 132px;
   top: 45px;
   width: 303px;
-  display:none;
+  display: none;
 }
 
-#divi2{
-  color: white; font-size: 15px; padding: 5px; margin-top: 0px;
+#divi2 {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
-.note2Input{
+.note2Input {
   cursor: pointer;
   border-radius: 5px;
   margin: 0auto;
@@ -661,7 +658,7 @@ margin-top: 0px;
   margin-top: 0px;
 }
 
-#note3{
+#note3 {
   position: absolute;
   padding: 10px;
   border: 1px solid black;
@@ -670,14 +667,17 @@ margin-top: 0px;
   left: 135px;
   top: 52px;
   width: 303px;
-  display:none;
+  display: none;
 }
 
-#divi3{
-  color: white; font-size: 15px; padding: 5px; margin-top: 0px
+#divi3 {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
-.note3Input{
+.note3Input {
   cursor: pointer;
   border-radius: 5px;
   margin: 0auto;
@@ -685,7 +685,7 @@ margin-top: 0px;
   margin-top: 0px;
 }
 
-#note4{
+#note4 {
   position: absolute;
   padding: 10px;
   border: 1px solid black;
@@ -694,14 +694,17 @@ margin-top: 0px;
   left: 130px;
   top: 52px;
   width: 303px;
-  display:none;
+  display: none;
 }
 
-#divi4{
-  color: white; font-size: 15px; padding: 5px; margin-top: 0px
+#divi4 {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
-.note4Input{
+.note4Input {
   cursor: pointer;
   border-radius: 5px;
   margin: 0auto;
@@ -709,7 +712,7 @@ margin-top: 0px;
   margin-top: 0px;
 }
 
-#note5{
+#note5 {
   position: absolute;
   padding: 10px;
   border: 1px solid black;
@@ -718,14 +721,17 @@ margin-top: 0px;
   left: 144px;
   top: 52px;
   width: 303px;
-  display:none;
+  display: none;
 }
 
-#divi5{
-  color: white; font-size: 15px; padding: 5px; margin-top: 0px
+#divi5 {
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 0px;
 }
 
-.note5Input{
+.note5Input {
   cursor: pointer;
   border-radius: 5px;
   margin: 0auto;
@@ -733,68 +739,136 @@ margin-top: 0px;
   margin-top: 0px;
 }
 
-#grad1{
-  height:133px;width: 0px;left: 500px; top: 145px;transform: rotate(73deg);
+#grad1 {
+  height: 133px;
+  width: 0px;
+  left: 500px;
+  top: 145px;
+  transform: rotate(73deg);
 }
 
-#eq5{
-  margin-left:116px;margin-top:31px;position:absolute;display: none;
+#eq5 {
+  margin-left: 116px;
+  margin-top: 31px;
+  position: absolute;
+  display: none;
 }
 
-#eq2{
-  margin-left:116px;margin-top:106px;position:absolute;display: none;
+#eq2 {
+  margin-left: 116px;
+  margin-top: 106px;
+  position: absolute;
+  display: none;
 }
 
-#eq3{
-  margin-left:116px;margin-top:158px;position:absolute;display: none;
+#eq3 {
+  margin-left: 116px;
+  margin-top: 158px;
+  position: absolute;
+  display: none;
 }
 
-#eq6{
-  margin-left:106px;margin-top:225px;position:absolute;display: none;width:206px;height:47px;
+#eq6 {
+  margin-left: 106px;
+  margin-top: 225px;
+  position: absolute;
+  display: none;
+  width: 206px;
+  height: 47px;
 }
-#eq4{
-  margin-left:116px;margin-top:231px;position:absolute;display: none;
+#eq4 {
+  margin-left: 116px;
+  margin-top: 231px;
+  position: absolute;
+  display: none;
 }
 
-#arrow15{
-  position: absolute; visibility: hidden;    margin-left: -266px;
+#arrow15 {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -266px;
   margin-top: -174px;
 }
 
-#x1{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:20px;visibility:hidden;
+#x1 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 20px;
+  visibility: hidden;
 }
 
-#x2{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:42px;visibility:hidden;
+#x2 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 42px;
+  visibility: hidden;
 }
 
-#x3{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:65px;visibility:hidden;
+#x3 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 65px;
+  visibility: hidden;
 }
 
-#y1{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:20px;visibility:hidden;
+#y1 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 20px;
+  visibility: hidden;
 }
 
-#y2{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:42px;visibility:hidden;
+#y2 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 42px;
+  visibility: hidden;
 }
 
-#y3{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:65px;visibility:hidden;
+#y3 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 65px;
+  visibility: hidden;
 }
 
-#z1{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:20px;visibility:hidden;
+#z1 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 20px;
+  visibility: hidden;
 }
 
-#z2{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:42px;visibility:hidden;
+#z2 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 42px;
+  visibility: hidden;
 }
 
-#z3{
-  position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:65px;visibility:hidden;
+#z3 {
+  position: absolute;
+  font-family: Verdana;
+  font-size: 14pz;
+  left: 285px;
+  top: 65px;
+  visibility: hidden;
 }
 
 /* #s1{
@@ -807,21 +881,29 @@ margin-top: 0px;
   position:absolute;font-family:Verdana;font-size:14pz;left:285px;top:65px;visibility:hidden;
 } */
 
-#arrow18{
-  position: absolute; visibility: hidden;    margin-left: -77px;
-    margin-top: -151px;
+#arrow18 {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -77px;
+  margin-top: -151px;
 }
 
-#arrow20{
-  position: absolute; visibility: hidden;    margin-left: -58px;
-    margin-top: -165px;
+#arrow20 {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -58px;
+  margin-top: -165px;
 }
-#arrowB{
-  position: absolute; visibility: hidden;    margin-left: 102px;
+#arrowB {
+  position: absolute;
+  visibility: hidden;
+  margin-left: 102px;
   margin-top: -149px;
 }
-#arrowB1{
-  position: absolute; visibility: hidden;margin-left: -266px;
+#arrowB1 {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -266px;
   margin-top: -148px;
 }
 
@@ -840,17 +922,16 @@ margin-top: 0px;
   height: 350px;
   top: 28px;
 }
-#sim4{
+#sim4 {
   position: absolute;
   left: 60px;
   width: 438px;
   height: 302px;
   top: 23px;
-  
 }
 
-#sim5{
-  position:absolute;
+#sim5 {
+  position: absolute;
   left: 280px;
   width: 20px;
   height: 20px;
@@ -858,8 +939,7 @@ margin-top: 0px;
   transform: rotateY(180deg);
 }
 
-
-#sim6{
+#sim6 {
   /* position:absolute;
   left: 280px;
   width: 70px;
@@ -884,62 +964,55 @@ margin-top: 0px;
   width: 438px;
   height: 302px;
   top: 40px;
-  
 }
-#sim8{
-  position:absolute;
+#sim8 {
+  position: absolute;
   left: 465px;
   width: 79px;
   height: 170px;
   top: 202px;
-
 }
-#sim9{
+#sim9 {
   /* position:absolute;
   left: 465px;
   width: 89px;
   height: 244px;
   top: 175px; */
   position: absolute;
-    left: 273px;
-    width: 89px;
-    height: 244px;
-    top: 107px;
-
+  left: 273px;
+  width: 89px;
+  height: 244px;
+  top: 107px;
 }
-#sim10{
-  position:absolute;
+#sim10 {
+  position: absolute;
   left: 280px;
   width: 70px;
   height: 50px;
   top: 129px;
-  
-  
 }
-#sim11{
+#sim11 {
   /* position:absolute;
   left: 495px;
   width: 81px;
   height: 66px;
   top: 133px;
    transform: rotate(3deg);  */
-   position: absolute;
-    left: 308px;
-    width: 81px;
-    height: 66px;
-    top: 68px;
-    transform: rotate(3deg);
-  
+  position: absolute;
+  left: 308px;
+  width: 81px;
+  height: 66px;
+  top: 68px;
+  transform: rotate(3deg);
 }
-#sim12{
+#sim12 {
   position: absolute;
   left: 276px;
   width: 92px;
   height: 244px;
   top: 107px;
-
 }
-#sim13{
+#sim13 {
   position: absolute;
   left: 334px;
   width: 45px;
@@ -947,13 +1020,12 @@ margin-top: 0px;
   top: 112px;
 }
 
-#sim14{
+#sim14 {
   position: absolute;
   left: 344px;
   width: 45px;
   height: 138px;
   top: 111px;
-
 }
 #sim18 {
   /* position: absolute;
@@ -961,13 +1033,13 @@ margin-top: 0px;
   width: 102px;
   height: 28px;
     top: 170px; */
-    position: absolute;
-    left: 329px;
-    width: 102px;
-    height: 28px;
-    top: 160px;
+  position: absolute;
+  left: 329px;
+  width: 102px;
+  height: 28px;
+  top: 160px;
 }
-#sim15{
+#sim15 {
   position: absolute;
   left: 352px;
   width: 70px;
@@ -975,69 +1047,62 @@ margin-top: 0px;
   top: 75px;
 }
 
-#sim16{
+#sim16 {
   position: absolute;
   left: 333px;
   width: 45px;
   height: 133px;
   top: 119px;
-
 }
-#sim17{
+#sim17 {
   position: absolute;
   left: 325px;
   width: 70px;
   height: 56px;
   top: 60px;
   transform: rotate(317deg);
-  
 }
-#circuit13{
+#circuit13 {
   position: absolute;
   left: 334px;
   width: 45px;
   height: 141px;
   top: 112px;
-
 }
-#circuit14{
+#circuit14 {
   /* position:absolute;
   left: 424px;
   width: 45px;
   height: 144px;
   top: 169px; */
   position: absolute;
-    left: 205px;
-    width: 45px;
-    height: 144px;
-    top: 104px;
-
+  left: 205px;
+  width: 45px;
+  height: 144px;
+  top: 104px;
 }
 
-#notee{
+#notee {
   position: absolute;
-      padding: 10px;
-      border: 1px solid black;
-      background-color: black;
-      border-radius: 5px;
-      left: 151px;
-      top: 317px;
-      width: 303px;
-      display: block;
-      animation: 2s ease 0s 1 normal forwards running moveAngle;
-  
-  
-  }
+  padding: 10px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  left: 151px;
+  top: 317px;
+  width: 303px;
+  display: block;
+  animation: 2s ease 0s 1 normal forwards running moveAngle;
+}
 
-  #add {
-    position: absolute;
-    left: 232px;
-    top: -9px;
-    width: 166px;
-    font-weight: bold;
-    display: none;
-   
-  } 
+#add {
+  position: absolute;
+  left: 232px;
+  top: -9px;
+  width: 166px;
+  font-weight: bold;
+  display: none;
+}
 
 .practice-steps {
   font-style: 1.8rem;
@@ -1214,8 +1279,6 @@ margin-top: 0px;
   margin: 0 auto;;
 } */
 
-
-
 canvas {
   /* border: 1px solid silver; */
   cursor: crosshair;
@@ -1322,7 +1385,6 @@ canvas {
   justify-content: center;
 }
 
-
 .option {
   color: blue;
 }
@@ -1370,14 +1432,11 @@ canvas {
   bottom: -100%;
   color: #000;
 }
-.simscreen1{
-
+.simscreen1 {
   position: relative;
-
 }
-.btn-A{
-
-  padding:1rem;
+.btn-A {
+  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
@@ -1389,9 +1448,8 @@ canvas {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
-
 }
-.btn-A:disabled{
+.btn-A:disabled {
   background-image: linear-gradient(
     to bottom,
     var(--clr-body-clr),
@@ -1400,9 +1458,8 @@ canvas {
   color: var(--clr-side-background3);
   cursor: not-allowed;
 }
-.btn-B{
-
-  padding:1rem;
+.btn-B {
+  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
@@ -1414,9 +1471,8 @@ canvas {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
-
 }
-.btn-B:disabled{
+.btn-B:disabled {
   background-image: linear-gradient(
     to bottom,
     var(--clr-body-clr),
@@ -1425,9 +1481,8 @@ canvas {
   color: var(--clr-side-background3);
   cursor: not-allowed;
 }
-.btn-B1{
-
-  padding:1rem;
+.btn-B1 {
+  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
@@ -1439,9 +1494,8 @@ canvas {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
-
 }
-.btn-B1:disabled{
+.btn-B1:disabled {
   background-image: linear-gradient(
     to bottom,
     var(--clr-body-clr),
@@ -1450,9 +1504,8 @@ canvas {
   color: var(--clr-side-background3);
   cursor: not-allowed;
 }
-.btn-c{
-
-  padding:1rem;
+.btn-c {
+  padding: 1rem;
   font-weight: 700;
   border: none;
   background-image: linear-gradient(
@@ -1464,9 +1517,8 @@ canvas {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s;
-
 }
-.btn-c:disabled{
+.btn-c:disabled {
   background-image: linear-gradient(
     to bottom,
     var(--clr-body-clr),
@@ -1475,51 +1527,48 @@ canvas {
   color: var(--clr-side-background3);
   cursor: not-allowed;
 }
-#image1{
+#image1 {
   transform-origin: bottom right;
-  transform:rotate(30deg);
-  position: absolute; 
+  transform: rotate(30deg);
+  position: absolute;
   left: 59%;
   top: 15%;
   width: 12%;
   height: 33%;
-  opacity:1 ;
+  opacity: 1;
   display: none;
- }
- #image{
-        
+}
+#image {
   transform-origin: bottom left;
-  transform:rotate(-30deg);
+  transform: rotate(-30deg);
   position: absolute;
   left: 32%;
   top: 15%;
   width: 12%;
   height: 33%;
-  opacity:1 ;
+  opacity: 1;
   display: none;
-
 }
-#image3{
+#image3 {
   z-index: 3;
   display: inline-block;
   transform-origin: bottom left;
   -webkit-transform: rotate(-20deg);
--moz-transform: rotate(-20deg);
--o-transform: rotate(-20deg); 
-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
   position: absolute;
   /* left: 37.5%;
   top: 35.2%; */
   width: 15%;
   height: 33%;
-  opacity:1 ;
+  opacity: 1;
   display: none;
-
 }
 input[type="radio"] {
   cursor: pointer;
 }
- /* #A{
+/* #A{
         position: absolute;
         left: 23px;
         border: none;
@@ -1527,7 +1576,7 @@ input[type="radio"] {
         background: none;
         top: 245px;
     } */
-    /* #B1{
+/* #B1{
         position: absolute;
         left: 410px;
             border: none;
@@ -1544,7 +1593,7 @@ input[type="radio"] {
         z-index: 5;
         top: 90px;
     } */
-    /* #B{
+/* #B{
         position: absolute;
         left: 325px;
         border: none;
@@ -1553,27 +1602,29 @@ input[type="radio"] {
         z-index: 5;
 
     } */
-    .practice-step-button{
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .radioGroup {
-      display: flex;
-      align-items: center;
-  }
-  #shapeDropdown{
-    border: 2px solid var(--clr-title-background);
-    border-radius: 8%;
-    padding: 3%;
-  }
-  #shapeDropdown option{
-    background-color: var(--clr-title-background); /* Background color for options */
-            color: #fff; /* Text color for options */
-  }
-  .shapeDrop {
-      margin-left: 2%;
-  }
+.practice-step-button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.radioGroup {
+  display: flex;
+  align-items: center;
+}
+#shapeDropdown {
+  border: 2px solid var(--clr-title-background);
+  border-radius: 8%;
+  padding: 3%;
+}
+#shapeDropdown option {
+  background-color: var(
+    --clr-title-background
+  ); /* Background color for options */
+  color: #fff; /* Text color for options */
+}
+.shapeDrop {
+  margin-left: 2%;
+}
 @keyframes highlight {
   0% {
     transform: scale(1);
@@ -1604,7 +1655,7 @@ input[type="radio"] {
   justify-self: center;
   /* left: 45px; */
   /* border: black solid; */
-  
+
   border-width: 3px;
   z-index: 7;
 }
@@ -1627,10 +1678,9 @@ input[type="radio"] {
 .insert-reset-observation {
   display: flex;
   justify-content: center;
-  
+
   margin: 10px;
 }
-
 
 .insert-reset-observation button {
   width: 120px;
@@ -1665,16 +1715,16 @@ input[type="radio"] {
 } */
 .circuitb {
   transform: scale(0.9);
-width: 100%;
+  width: 100%;
 }
 
-.values button{
+.values button {
   width: 30px;
   height: 20px;
   border-radius: 10%;
   border: 1px solid black;
 }
-.values{
+.values {
   /* margin: 10px; */
   display: flex;
   align-items: center;
@@ -1713,24 +1763,21 @@ width: 100%;
   align-items: center;
   height: 75%;
   /* width:85%; */
-    
+
   position: absolute;
   background-color: rgb(174, 215, 232);
   border: black solid;
   border-width: 3px;
   z-index: 7;
-} 
+}
 
 .observationTable {
   display: grid;
   justify-content: center;
   align-items: center;
   border-collapse: collapse;
-  
- 
 }
 .observationTable tbody {
-  
   background-color: white;
 }
 .observation td,
@@ -1775,7 +1822,6 @@ th {
   justify-content: center;
 }
 
-
 .grid2 {
   padding: 2rem 0rem 2rem 0.5rem;
   display: flex;
@@ -1795,17 +1841,17 @@ th {
   row-gap: 1rem;
   column-gap: 1rem;
 }
-#kerConst{
+#kerConst {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: justify;
   /* font-weight: bold; */
 }
-#coefficientvalue{
+#coefficientvalue {
   /* font-weight: bold; */
   position: relative;
-    left:5px;
+  left: 5px;
 }
 
 #IBgraphbutton {
@@ -1833,7 +1879,7 @@ th {
   z-index: 7;
 } */
 
-#my_chart{
+#my_chart {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1853,18 +1899,17 @@ th {
 
 #IBgraph {
   display: none;
-  width: 20%;  /* Relative width for responsiveness */
+  width: 20%; /* Relative width for responsiveness */
   height: 120%; /* Relative height */
   position: absolute;
   background-color: white;
-  top: 18%;     /* Adjusted positioning */
+  top: 18%; /* Adjusted positioning */
   left: 10%;
   border: black solid;
   border-width: 3px;
   z-index: 7;
   overflow: hidden; /* Prevent overflow */
 }
-
 
 #IBgraph button {
   /* width: 60px;
@@ -1876,14 +1921,13 @@ th {
   position: relative;
   margin-top: -38px; */
   width: 38px;
-    height: 36px;
-    border-radius: 20px;
-    cursor: pointer;
-    float: right;
-    margin-right: 10px;
-    position: relative;
-    margin-top: -442px;
-  
+  height: 36px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  position: relative;
+  margin-top: -442px;
 }
 #lineargraph {
   width: 60px;
@@ -1918,7 +1962,6 @@ th {
   height: 500px;
 }
 
-
 #graph {
   width: 800px;
   height: 500px;
@@ -1945,7 +1988,6 @@ th {
   /* border-radius: 1rem; */
   border-radius: 20px;
   cursor: pointer;
-  
 }
 
 #clearbutton2 {
@@ -1967,8 +2009,7 @@ th {
   cursor: pointer;
 }
 
-
-  /* #IBgraph {
+/* #IBgraph {
     visibility: hidden;
     
     width: 95%;
@@ -1981,12 +2022,12 @@ th {
     border-width: 3px;
     z-index: 7;
   } */
-#myChart{
+#myChart {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#view{
+#view {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
@@ -1995,7 +2036,7 @@ th {
   color: var(--clr-text-clr);
   border-radius: 5px;
 }
-#view1{
+#view1 {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
@@ -2004,7 +2045,7 @@ th {
   color: var(--clr-text-clr);
   border-radius: 5px;
 }
-#view2{
+#view2 {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
@@ -2013,7 +2054,7 @@ th {
   color: var(--clr-text-clr);
   border-radius: 5px;
 }
-#view3{
+#view3 {
   background-image: linear-gradient(
     to bottom,
     var(--clr-side-background2),
@@ -2041,7 +2082,7 @@ th {
   color: var(--clr-text-clr);
 }
 
-#close2{
+#close2 {
   position: absolute;
   top: -1%;
   right: -2%;
@@ -2060,7 +2101,7 @@ th {
   color: var(--clr-text-clr);
 }
 
-#close3{
+#close3 {
   position: absolute;
   top: -1%;
   right: -2%;
@@ -2090,26 +2131,24 @@ th {
   background-color: white;
   transform: rotate(2deg);
 }
-  
 
 @keyframes moveSq {
-  0%{
+  0% {
     /* left: 281px;
     width: 458px;
     height: 302px; */
     left: 50px;
-  top: 28px;
+    top: 28px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     /* left: 281px;
     width: 458px;
     height: 302px; */
     left: 50px;
-  top: 28px;
+    top: 28px;
     transform: scale(1);
-
   }
 }
 
@@ -2117,135 +2156,122 @@ th {
   0% {
     left: 77px;
     top: 49px;
-}
-100% {
-  left: 114px;
-  top: 107px;
-}
+  }
+  100% {
+    left: 114px;
+    top: 107px;
+  }
 }
 @keyframes move_Hand {
-  0%{
+  0% {
     /* left: 712px;
     top: 130px; */
     left: 542px;
-  top: 75px;
+    top: 75px;
 
-  top: 75px;
-    
-    
+    top: 75px;
   }
-  
-  100%{
+
+  100% {
     /* left: 561px;
     top: 124px; */
     left: 350px;
-  top: 70px;
-
+    top: 70px;
   }
 }
 @keyframes moveBg {
-  0%{
+  0% {
     left: 281px;
     height: 458px;
     width: 302px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     left: 281px;
     top: 458px;
     height: 302px;
     transform: scale(1);
-
   }
 }
 @-webkit-keyframes moveBg {
-  0%{
+  0% {
     left: 485px;
     top: 160px;
-    width:0px;
+    width: 0px;
     transform: scale(0);
-
   }
-  
-  100%{
+
+  100% {
     left: 650px;
     top: 20px;
     width: 95px;
-    height:154px;
+    height: 154px;
     transform: scale(1);
-
   }
 }
 
 @keyframes moveBgMount {
-  0%{
+  0% {
     left: 256px;
     width: 106px;
     top: 60px;
-    transform:scale(0);
-
+    transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     left: 256px;
     width: 106px;
     top: 60px;
-    
-    transform: scale(1);
-   
 
+    transform: scale(1);
   }
 }
 @-webkit-keyframes moveBgMount {
-  0%{
+  0% {
     left: 285px;
     top: 150px;
-    width:0px;
+    width: 0px;
     transform: scale(0);
-
   }
-  
-  100%{
+
+  100% {
     left: 285px;
     top: 10px;
     width: 90px;
-    height:154px;
+    height: 154px;
     transform: scale(1);
-
   }
 }
-@keyframes moveAngle{
-  0%{
+@keyframes moveAngle {
+  0% {
     left: 151px;
     top: 244px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     left: 151px;
     top: 250px;
     transform: scale(1);
-
   }
 }
 
-@keyframes moveArrow{
-  0%{
+@keyframes moveArrow {
+  0% {
     /* left: 356px;
     top: 150px; */
     left: 339px;
     top: 100px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     /* left: 356px;
     top: 150px; */
     left: 339px;
     top: 100px;
     transform: scale(1);
-
   }
 }
 
@@ -2270,14 +2296,14 @@ th {
 }
 
 @keyframes moveAnn {
-  0%{
+  0% {
     left: 465px;
     width: 79px;
     height: 165px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     /* left: 465px;
     width: 79px;
     height: 165px;
@@ -2287,12 +2313,11 @@ th {
     width: 79px;
     height: 239px;
     transform: scale(1);
-
   }
 }
 
 @keyframes moveApp {
-  0%{
+  0% {
     /* left: 281px;
     width: 458px;
     height: 302px; */
@@ -2300,35 +2325,29 @@ th {
     top: 23px;
     transform: scale(0);
   }
-  
-  100%{
+
+  100% {
     /* left: 281px;
     width: 458px;
     height: 302px; */
     left: 60px;
     top: 40px;
     transform: scale(1);
-
   }
 }
 @keyframes moveAnalyser {
-  0%{
+  0% {
     left: 446px;
     top: 147px;
-    
   }
-  
-  100%{
+
+  100% {
     left: 311px;
     top: 62px;
-    
-    
-
   }
 }
 @keyframes moveGd {
-  0%{
-  
+  0% {
     /* left: 500px;
     width: 0px;
     top: 100px; */
@@ -2336,26 +2355,25 @@ th {
     width: 4px;
     top: 36px;
   }
-  100%{
-
+  100% {
     /* left: 510px;
     width:5px;
      top: 100px; */
-     left: 298px;
-     height: 133px;
-     width: 4px;
-     top: 36px;
+    left: 298px;
+    height: 133px;
+    width: 4px;
+    top: 36px;
   }
 }
-@keyframes move_Pin{
-  0%{
+@keyframes move_Pin {
+  0% {
     /* left: 533px;
     top: 122px; */
     left: 318px;
-  top: 70px;
+    top: 70px;
     transform: rotate(317deg);
   }
-  100%{
+  100% {
     /* left: 563px;
     top: 126.5px; */
     left: 344px;
@@ -2363,24 +2381,23 @@ th {
     transform: rotate(358deg);
   }
 }
-@keyframes movePin{
-  0%{
+@keyframes movePin {
+  0% {
     left: 311px;
     top: 70px;
     transform: rotate(0deg);
   }
-  25%{
-
+  25% {
     left: 338px;
     top: 87px;
     transform: rotate(23deg);
   }
-  50%{
-    left:342px;
-    top:120px;
+  50% {
+    left: 342px;
+    top: 120px;
     transform: rotate(53deg);
   }
-  100%{
+  100% {
     left: 325px;
     top: 164px;
     transform: rotate(94deg);
@@ -2397,7 +2414,6 @@ th {
   max-width: 250px; /* Set the maximum width you want the slider to have */
   margin: 10px 0;
 }
-
 
 .slider {
   -webkit-appearance: none;
