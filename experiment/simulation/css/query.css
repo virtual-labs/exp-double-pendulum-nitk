@@ -50,6 +50,10 @@ em:current font size
     width: 100%; /* Full width of the container */
     height: auto; /* Responsive height */
   }
+  body {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
 }
 
 /* **************************** */
@@ -57,10 +61,6 @@ em:current font size
 /* **************************** */
 
 @media (max-width: 75em) {
-  body {
-    width: 100%;
-    margin: unset;
-  }
   .title-div h1 {
     font-size: 2.5rem;
   }
@@ -161,6 +161,10 @@ em:current font size
 /* **************************** */
 
 @media (max-width: 59em) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
   .tool-link:link,
   .tool-link:visited {
     gap: 0.5rem;
@@ -183,6 +187,10 @@ em:current font size
     justify-content: space-evenly;
     border-radius: 0;
     scroll-behavior: auto;
+    margin: 0;
+  }
+  .main {
+    grid-column: 1/-1;
   }
   .tool-menu {
     list-style: none;
