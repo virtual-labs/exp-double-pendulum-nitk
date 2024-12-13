@@ -38,8 +38,17 @@ const dropDown = document.querySelector(".shapeDrop");
 
 const radioButtons = document.querySelectorAll('input[name="navigation"]');
 
-const taskTitle = document.querySelector(".task-title");
+const taskTitleText = document.querySelector(".task-title--text");
 
+const simControl = document.querySelector(".sim-icon--control");
+
+const simIcons = document.querySelector(".sim-icons");
+
+simControl.addEventListener("click", function () {
+  document.querySelector("#controls").scrollIntoView({
+    behavior: "smooth",
+  });
+});
 // radioButtons.style.cursor= "pointer";
 
 radioButtons.forEach(function (radio) {
@@ -70,45 +79,34 @@ function displayDiv(ele) {
   taskScreen.forEach((task) => {
     task.classList.add("hide");
   });
-  document.querySelector(".tool-controls").classList.add("hide");
+  simIcons.classList.remove("flex");
+  simIcons.classList.add("hide");
   if (ele.classList.contains("tool-objective")) {
     console.log(ele);
     document.querySelector(".objective").classList.remove("hide");
-    taskTitle.textContent = "Objective";
-    // document.getElementById("Results").style.display = "none";
-    document.getElementById("controls").style.display = "none";
+    taskTitleText.textContent = "Objective";
     document.getElementById("instructions").style.display = "none";
   }
   if (ele.classList.contains("tool-apparatus")) {
     document.querySelector(".apparatus").classList.remove("hide");
-    taskTitle.textContent = "Apparatus";
-    // document.getElementById("Results").style.display = "none";
-    document.getElementById("controls").style.display = "none";
+    taskTitleText.textContent = "Apparatus";
     document.getElementById("instructions").style.display = "none";
   }
-  if (ele.classList.contains("tool-controls")) {
-    document.querySelector(".practice").classList.remove("hide");
-    document.querySelector(".tool-controls").classList.remove("hide");
-    document.querySelector("#controls").scrollIntoView({
-      behavior: "smooth", // Smooth scrolling animation
-      block: "start", // Align the top of the element to the top of the viewport
-    });
-  }
+
   if (ele.classList.contains("tool-help")) {
     refresh();
   }
 
   if (ele.classList.contains("tool-practice")) {
-    document.querySelector(".practice").classList.remove("hide");
-    document.querySelector(".tool-controls").classList.remove("hide");
-    document.querySelector("#simulation").classList.remove("hide");
     document.querySelector("#simulation").scrollIntoView({
-      behavior: "smooth", // Smooth scrolling animation
-      block: "start", // Align the top of the element to the top of the viewport
+      behavior: "smooth",
     });
-    taskTitle.textContent = "Experiment";
+    document.querySelector(".practice").classList.remove("hide");
+    document.querySelector("#controls").classList.remove("hide");
+    simIcons.classList.remove("hide");
+    simIcons.classList.add("flex");
+    taskTitleText.textContent = "Experiment";
     // document.getElementById("Results").style.display = "block";
-    document.getElementById("controls").style.display = "block";
     document.getElementById("instructions").style.display = "none";
     $(stepTitle).css("margin-left", "5rem");
     // stepNumber.classList.add('hide');
