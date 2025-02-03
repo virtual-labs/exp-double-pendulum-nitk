@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+ 
+    <!-- <script defer src="https://code.jquery.com/jquery.min.js"></script> -->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
+    <title>Virtual Lab</title>
+    <!-- <script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script> -->
+    <script
+      defer
+      src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+
+  </head>
+  <body>
+    <div class="container">
+    <div class="title-div-container">
+      <div class="title-div">
+          <div class="logo-div">
+            <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
+          </div>
+          <h1>Double Pendulum
+          </h1>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-objective" onclick="displayDiv(this)">
+            <a class="tool-link" title="Objective"
+              >
+              <img src="./images/objective.png" alt="Objective" class="icons">
+            </a>
+            <span>Objective</span>
+          </li>
+          <li class="tool-list tool-apparatus" onclick="displayDiv(this)">
+            <a class="tool-link" title="Apparatus"
+              ><img src="./images/apparatus.png" alt="Objective" class="icons"></a
+              >
+              <span>Apparatus</span>
+          </li>
+          
+          <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"><img src="./images/solution.png" alt="solution" class="icons"
+              ></a
+              >
+              <span>Experiment</span>
+          </li>
+          <li class="tool-list tool-controls hide"  onclick="displayDiv(this)">
+            <a class="tool-link" title="Controls"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#089B93"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
+                /></svg
+            ></a>
+            <span>Controls</span>
+          </li>
+
+          <li class="tool-list tool-help" onclick="displayDiv(this)">
+            <a class="tool-link" title="Help"
+              ><img src="./images/bluecwdull.svg" alt="Help" class="icons"
+              ></a
+              >
+              <span>Refresh</span>
+          </li>
+          
+        </ul>
+      </div> 
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">
+              <span class="task-title--text">Objective</span>
+              <span class="sim-icons hide">
+                <img src="./images/controls-wt.png" alt="controls" title="Controls" class="sim-icon sim-icon--control">
+              </span>
+            </h3>
+           
+            <div class="canvas__div">
+              <div class="task-screen objective">
+                <!-- <h3 class="objective__title">Objective</h3> -->
+                <p class="objective__main">To study the oscillatory motion of a double pendulum.</span>
+
+                </p>
+               
+                
+              </div>
+              <div class="task-screen apparatus hide">
+               
+                <div class="apparatus-screen">
+                  <img src="images/pendulum.png" alt="apparatus" class="model">
+
+                </div>
+               
+              </div>
+           
+              <div class="task-screen practice hide">
+
+                <div class="mainsimulation" id="mainsimulation">
+                  
+                  <canvas id="canvas" width="599" height="538"></canvas>
+                  
+                  <div id="graph" >
+                    <button id="clearbutton" type="button" onclick="clearGraph()">Clear graph</button>
+                </div>
+                <div id="Timegraph" style="display: none;">
+                  <button id="clearbutton2" type="button" onclick="clearGraph2()">Clear graph</button>
+              </div>
+
+                  <span id="Rfvalue" style="display:none ;"></span>
+
+                  <div class="cont1">
+ 
+               
+                </div>
+  
+                  
+                  <div id="myDiv"></div>
+                  
+                 
+              </div>
+              <div id="Vgraph">
+                <div id="my_Chart"></div>
+                <button id="close2" onclick="closeobservation()" style="display: block;"><span>&times;</span></button>
+
+            </div>
+            
+              <div id="IBgraph">
+                <button id="close1" onclick="closeobservation()" > <span>&times;</span></button>
+                <div id="myChart">
+                  </div>
+            </div>
+                
+            </div>
+            <div id="instructions" style="display: none;">
+              <div class="icontent">
+                  <h2 id="instruct">Instructions</h2>
+                  <ol>
+                      <li>Click the start button.</li>
+                      <li>The screen will display the note, click on ok to continue.</li>
+                      <li>The PLZT element is set to 45 degree in its holder with respect to incident light.</li>
+                      <li>The screen will display the next note click on ok.</li>
+                      <li>Set the polariser and analyzer at 0 degree and turn on the laser.</li>
+                      <li>The screen will display the note, click on ok to continue.</li>
+                      <li>Display the value of the voltage to 0V.</li>
+                      <li>Turn the analyser to 90 degree,clockwise.</li>
+                      <li>Adjust the voltage to 300V and Increase the voltage in steps of 25V,from 300V until 1000V and tabulate the measurements as shown on table1.</li>
+                      <li>Display the graph of vs V(volt).</li>
+                      <li>Display the graph of () of vs degree.Display the slope and Kerr Constant.</li>
+                      <li>Click on "Result Button" to display the results.</li>
+              </div>
+              <!-- <button type="button" onclick="closeobservation()">Close</button> -->
+          </div>
+         
+          <div class="observation" id="IBobservation">
+            <div class="tablediv" id="IBtablediv">
+                <table class="observationTable" id="IBobservationTable">
+                    <tr>
+                      <th>Voltage(V)</th>
+                      <th>Voltage<sup>2</sup>(V)<sup>2</sup></th>
+                      <th>Current(µA)</th>
+                      <th>I/I<sub>0</sub></th>
+                      <th>I/I<sub>0</sub> in radians</th>
+                      <th>Δ/2 radians</th>
+                      <th>Δ/2 degree</th>
+                      <th>Δ degree</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tableObservation" id="IBtableObservation">
+                <button type="button" onclick="closeobservation()">Close</button>
+
+                <button type="button" onclick="clearing()" style="width: 70px;">Clear All</button>
+                <button type="button" onclick="IBgraph()" style="width: 100px;">GRAPH</button>
+            </div>
+        </div>
+        
+            </div>
+          </div>
+          <div id="controls" class="main__task-div task-screen hide">
+            <div class="settings-sections">
+              <h3 class="task-title">Controls</h3>
+              <div class="blocker" onclick="closeobservation()" id="blocker"></div>
+              <div class="simoptions" id="simoptions">
+                <div class="grid2">
+                  <div class="simoptions" id="simoptions">
+                  <div class="insert-reset-observation">
+                    <button id="simbutton" type="button" onclick="sim()" disabled>Sim</button>
+                </div>
+              </div>
+                  <div class="current" id = "length1">
+                    <p>Rod-1 length: <span id="len1value"></span> 
+                      <!-- <span id="currentvalue"></span> V -->
+                    </p>
+                    <input type="range" min="10" max="200" value="100" step="0.01" class="slider" id="cslider1">
+                </div>
+                <div class="current" id = "length2">
+                  <p>Rod-2 length: <span id="len2value"></span> </p>
+                  <input type="range" min="10" max="200" value="100" step="0.01" class="slider" id="cslider2" >
+              </div>
+              <div class="current" id = "mass1">
+                <p>Mass1: <span id="mass1value"></span> </p>
+                <input type="range" min="10" max="50" value="25" step="0.01" class="slider" id="cslider3" >
+            </div>
+            <div class="current" id = "mass2">
+              <p>Mass2: <span id="mass2value"></span> </p>
+              <input type="range" min="10" max="50" value="25" step="0.01" class="slider" id="cslider4" >
+          </div>
+          <div class="current" id = "gravity">
+            <p>Gravity: <span id="gravityvalue"></span> </p>
+            <input type="range" min="1" max="100" value="9.80" step="0.01" class="slider" id="cslider5" >
+        </div>
+        <div class="insert-reset-observation">
+          <button id="graphbutton" type="button" onclick="Graph()">Graph</button>
+      </div>
+      <div id="Timegraph" style="display: none;">
+        <button id="clearbutton2" type="button" onclick="clearGraph2()">Clear graph</button>
+    </div>
+
+      <div class="insert-reset-observation">
+        <button style="display: none;" id="timegraph" type="button" onclick="Timegraph()" disabled>Time Graph</button>
+    </div>
+
+    <div class="selectgraph" id="g1">
+      <label for="s1">Lime: 
+          <select id="s1" class="form-control">
+              <option value="angle-1" selected>angle-1</option>
+              <option value="angle-1 velocity">angle-1 velocity</option>
+              <option value="angle-2">angle-2</option>
+              <option value="angle-2 velocity">angle-2 velocity</option>
+              <option value="acceleration-1">acceleration-1</option>
+              <option value="acceleration-2">acceleration-2</option>
+              <option value="kinetic energy">kinetic energy</option>
+              <option value="potential energy">potential energy</option>
+              <option value="total energy">total energy</option>
+              <option value="time">time</option>
+          </select>
+      </label>
+  </div>
+  <div class="selectgraph" id="g2">
+      <label for="s2">Red : 
+          <select id="s2" class="form-control">
+              <option value="angle-1">angle-1</option>
+              <option value="angle-1 velocity" selected>angle-1 velocity</option>
+              <option value="angle-2">angle-2</option>
+              <option value="angle-2 velocity">angle-2 velocity</option>
+              <option value="acceleration-1">acceleration-1</option>
+              <option value="acceleration-2">acceleration-2</option>
+              <option value="kinetic energy">kinetic energy</option>
+              <option value="potential energy">potential energy</option>
+              <option value="total energy">total energy</option>
+              <option value="time">time</option>
+          </select>
+      </label>
+  </div>
+                        </div> 
+            </div>
+            <div id="kerConst" style="display: none;">
+              <br>
+              <label >Kerr Constant : </label><br>
+              <span id="coefficientvalue" style="display:none"> 2.66*10<sup>-9</sup>(m/volt<sup>2</sup>)</span><br>
+
+          </div>
+           
+            </div>
+            <button
+            class="btn btn-top hide"
+            title="Move to Top"
+            onclick="movetoTop()"
+            ontouchstart="movetoTop"
+          >
+            ↑
+          </button>
+          </div>
+          </div>
+         
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div>
+    </div>
+    <script defer src="js/script.js"></script>
+  <script src="../assets/js/iframeResize.js"></script>
+          
+          </body>
+</html>

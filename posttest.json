@@ -1,0 +1,91 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How is a double pendulum different from a simple pendulum?",
+      "answers": {
+        "a": "It does not obey the conservation of energy",
+        "b": "Both are the same",
+        "c": "Double pendulums have periodic motion while a simple pendulum does not",
+        "d": "Double pendulums show both linear and non-linear motion"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "At what angle does the double pendulum show non-linear behaviour?",
+      "answers": {
+        "a": "At large angles",
+        "b": "At small angles",
+        "c": "It is independent of the angle",
+        "d": "Both a) and b)."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which one of the following is the Euler-Lagrange equation of motion?",
+      "answers": {
+        "a": "<img src= 'images/pimg1.png' />",
+        "b": "<img src= 'images/pimg2.png' />",
+        "c": "<img src= 'images/pimg3.png' />",
+        "d": "<img src= 'images/pimg4.png' />"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What method is used to solve the equations of motion of a double pendulum?",
+      "answers": {
+        "a": "Newton-Rhapson method",
+        "b": "Runge-Kutta method",
+        "c": "Bisection method",
+        "d": "Gaussian elimination method"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What kind of trajectory does a double pendulum generate for small angles?",
+      "answers": {
+        "a": "Lissajous curves",
+        "b": "Halo curves",
+        "c": "Spiral curves",
+        "d": "Elliptical curves"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
+ 

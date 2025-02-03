@@ -1,0 +1,1 @@
+To study the oscillatory motion of a double pendulum.

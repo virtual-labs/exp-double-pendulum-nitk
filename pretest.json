@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is a double pendulum?",
+      "answers": {
+        "a": "A system with two pendulums attached to each other",
+        "b": "A pendulum that swings in two directions simultaneously",
+        "c": "Two pendulums swinging independently",
+        "d": "A pendulum with twice the mass of a single pendulum"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following equations describes the behavior of a double pendulum?",
+      "answers": {
+        "a": "Newton's second law",
+        "b": "Coulomb's law",
+        "c": "Lagrangian equations",
+        "d": "Ohm's law"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Why is it difficult to predict the behavior of a double pendulum analytically?",
+      "answers": {
+        "a": "The double pendulum violates the laws of physics.",
+        "b": "The double pendulum is an imaginary concept and cannot be observed.",
+        "c": "The behavior of a double pendulum is chaotic and sensitive to initial conditions.",
+        "d": "Analytical predictions of a double pendulum require complex mathematical tools not yet developed."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",     
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why do we study double pendulums?",
+      "answers": {
+        "a": "For a broader understanding of complex and nonlinear systems",
+        "b": "To understand the linear motion of systems",
+        "c": "To measure the effect of gravity",
+        "d": "It is simple to understand"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which one of the following laws is not applicable to a simple pendulum?",
+      "answers": {
+        "a": "The time period does not depend on its magnitude",
+        "b": "Time period is proportional to length l",
+        "c": "Time period is proportional to  where l is the length",
+        "d": "Time period is inversely proportional to  where g is the acceleration due to gravity"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}
