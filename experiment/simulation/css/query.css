@@ -1,0 +1,700 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+
+@media (min-width: 1200px) {
+  .canvas__div {
+    /* padding: 20px; */
+    grid-template-columns: 1fr;
+  }
+  /* #variables {
+  width: 100%;
+} */
+  #IBgraph {
+    transform: scale(0.75);
+    margin-top: -18%;
+    margin-left: -24%;
+    width: 131%;
+  }
+
+  #Vgraph {
+    transform: scale(0.75);
+    margin-top: -12%;
+    margin-left: -19%;
+    width: 131%;
+  }
+  #calculate {
+    transform: scale(1);
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+    margin-left: -520px;
+  }
+  .observation {
+    transform: scale(0.8);
+  }
+  canvas {
+    margin-left: 40px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+  }
+  body {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+  .task-title {
+    font-size: 2rem;
+  }
+  .tool-menu {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ctrl-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+  }
+  .div__control img {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  /* #variables {
+    width: 100%;
+  } */
+
+  .canvas__div {
+    padding: 30px;
+  }
+  #IBgraph {
+    transform: scale(0.9);
+    margin-top: -13%;
+    margin-left: -3%;
+    width: 92%;
+  }
+
+  #Vgraph {
+    transform: scale(0.9);
+    margin-top: -6%;
+    margin-left: 0%;
+    width: 92%;
+  }
+  #calculate {
+    transform: scale(1.1);
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+    margin-left: -520px;
+  }
+  .observation {
+    transform: scale(0.85);
+  }
+  #IBtableObservation {
+    transform: scale(0.95);
+  }
+  canvas {
+    margin-left: 203px;
+  }
+  #clearbutton {
+    position: absolute;
+    top: 446px;
+    left: 612px;
+    display: none;
+  }
+  #clearbutton2 {
+    position: absolute;
+    top: 452px;
+    left: 670px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+    margin-left: 150px;
+  }
+  /* .practice {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  } */
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  .tool-link:link,
+  .tool-link:visited {
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  .title-div h1 {
+    font-size: 2rem;
+  }
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+    margin: 0;
+  }
+  .main {
+    grid-column: 1/-1;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.85);
+    margin-left: -525px;
+  }
+
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  #IBgraph {
+    transform: scale(0.8);
+    margin-top: -12%;
+    margin-left: -14%;
+    width: 108%;
+  }
+  #Vgraph {
+    transform: scale(0.8);
+    margin-top: -8%;
+    margin-left: -4%;
+    width: 108%;
+  }
+  #calculate {
+    transform: scale(1.1);
+    margin-left: 30px;
+  }
+
+  #IBtableObservation {
+    transform: scale(1);
+  }
+  canvas {
+    margin-left: 155px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+    margin-left: 100px;
+  }
+  #clearbutton {
+    position: absolute;
+    top: 446px;
+    left: 550px;
+    display: none;
+  }
+  #clearbutton2 {
+    position: absolute;
+    top: 438px;
+    left: 510px;
+  }
+}
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  /* .canvas__div {
+    grid-template-columns: 1fr;
+  } */
+  .canvas__div {
+    min-height: calc(100vh - 7 * 3.6rem);
+    overflow: hidden;
+    /* grid-template-columns: 1fr;
+    overflow: hidden; */
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .tool-list span {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  #IBgraph {
+    transform: scale(0.8);
+    margin-top: -19%;
+    margin-left: -16%;
+    width: 115%;
+  }
+  #Vgraph {
+    transform: scale(0.8);
+    margin-top: -8%;
+    margin-left: -9%;
+    width: 115%;
+  }
+  #calculate {
+    transform: scale(1.1);
+    margin-left: 11px;
+    margin-top: 40px;
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.85);
+    margin-left: -473px;
+  }
+  .observation {
+    transform: scale(0.8);
+  }
+
+  #IBtableObservation {
+    transform: scale(1);
+  }
+  canvas {
+    margin-left: 19px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+    margin-left: 130px;
+  }
+}
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  #IBgraph {
+    transform: scale(0.65);
+    margin-top: -18%;
+    margin-left: -35%;
+    width: 151%;
+  }
+  #Vgraph {
+    transform: scale(0.65);
+    margin-top: -4%;
+    margin-left: -29%;
+    width: 151%;
+  }
+  #calculate {
+    transform: scale(1);
+    margin-left: 7px;
+    margin-top: 39px;
+  }
+  .observation {
+    transform: scale(0.7);
+  }
+
+  #IBtableObservation {
+    transform: scale(1);
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+    margin-left: -532px;
+  }
+  canvas {
+    margin-left: -35px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+    margin-left: -30px;
+  }
+  #clearbutton {
+    position: absolute;
+    top: 446px;
+    left: 392px;
+    display: none;
+  }
+  #clearbutton2 {
+    position: absolute;
+    top: 456px;
+    left: 334px;
+  }
+  /* .task-screen.practice {
+    width: 100%;
+   min-height: 100px;
+    background-color: red;
+  } */
+  /* .practice {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    object-fit: cover;
+  } */
+}
+
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  /* .container {
+    gap: 1rem;
+  } */
+
+  .title-div h1 {
+    /* padding: 0.2rem; */
+
+    font-size: 1.6rem;
+    /* text-align: center; */
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+    /* top: 1.8rem;
+    right: 1.5rem; */
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  canvas {
+    /* width: 100%; */
+    margin-left: -35px;
+  }
+  label,
+  select,
+  input,
+  p {
+    /* display: inline-block; */
+    font-size: 1.5rem;
+  }
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  #IBgraph {
+    /* transform: scale(0.5);
+    margin-top: -44%;
+    margin-left: -63%;
+    width: 213%; */
+    transform: scale(0.6);
+    margin-top: -26%;
+    margin-left: -49%;
+    width: 179%;
+  }
+
+  #Vgraph {
+    transform: scale(0.6);
+    margin-top: -7%;
+    margin-left: -44%;
+    width: 179%;
+  }
+  #calculate {
+    transform: scale(1);
+    margin-left: 11px;
+    margin-top: 103px;
+  }
+  .observation {
+    transform: scale(0.57);
+  }
+  #IBtableObservation {
+    transform: scale(1);
+  }
+  #instruct {
+    font-size: 2rem;
+  }
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.72);
+    margin-left: -427px;
+  }
+  #graph {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Responsive height */
+    margin-left: -32px;
+  }
+  #clearbutton {
+    position: absolute;
+    top: 446px;
+    left: 270px;
+    display: none;
+    /* background-color: red; */
+  }
+  #clearbutton2 {
+    position: absolute;
+    top: 456px;
+    left: 273px;
+  }
+}
+
+@media (max-width: 27em) {
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .objective {
+    padding: 0rem;
+  }
+  .canvas__div {
+    min-height: calc(100vh - 7 * 3.6rem);
+    overflow: hidden;
+    /* grid-template-columns: 1fr;
+    overflow: hidden; */
+  }
+
+  .apparatus-screen {
+    grid-template-columns: 1fr;
+  }
+  /* .practice {
+    padding: 0.5rem;
+  } */
+  .quiz-div {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .answers {
+    grid-template-columns: 1fr;
+  }
+  .practice-step-no {
+    width: 3rem;
+    height: 3rem;
+  }
+  .btn-next,
+  .btn-reset,
+  .btn-top {
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  #IBgraph {
+    transform: scale(0.45);
+    margin-top: -52%;
+    margin-left: -79%;
+    width: 240%;
+    height: 592px;
+  }
+  #Vgraph {
+    transform: scale(0.45);
+    margin-top: -36%;
+    margin-left: -76%;
+    width: 240%;
+    height: 592px;
+  }
+  #calculate {
+    transform: scale(0.95);
+    margin-left: 0px;
+    margin-top: 138px;
+  }
+  .observation {
+    transform: scale(0.47);
+  }
+  #IBtableObservation {
+    transform: scale(1);
+  }
+  /* .circuit{
+    width: 100%;
+  } */
+  #image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.6);
+    margin-left: -356px;
+  }
+  canvas {
+    /* width: 100%; */
+    margin-left: -118px;
+  }
+  #clearbutton {
+    position: absolute;
+    top: 446px;
+    left: 221px;
+    display: none;
+    /* background-color: red; */
+  }
+  #clearbutton2 {
+    position: absolute;
+    top: 456px;
+    left: 220px;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
